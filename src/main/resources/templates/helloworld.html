@@ -5,6 +5,9 @@
 		<title>Thymeleaf Demo</title>
 	</head>
 	
-	<p th:text="'Time on the server is ' + ${theDate}" />
+	<!-- Reference stylesheet  -->
+	<link rel="stylesheet" th:href="@{/css/demo.css}" />
+	
+	<p th:text="'Time on the server is ' + ${theDate}" class="funny" />
 	
 </html>
